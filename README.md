@@ -1,5 +1,5 @@
 # microbit-nokia5110-PCD8544-lcd
-Fast Micro:bit micropython functions for Nokia 5110 LCDs
+A Fast Micro:bit micropython controller for Nokia 5110 LCDs
 
 This is a collection of micropython scripts for controlling Nokia 5110 LCD screens (PCD8544 chip) on a Micro:bit. In order to achieve useful speeds, the Micro:bit's SPI interface is used.
 
