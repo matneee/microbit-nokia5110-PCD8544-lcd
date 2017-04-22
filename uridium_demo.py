@@ -1,3 +1,4 @@
+#Author - @matneee (Martin Allen) 20 Apr 2017, matneee@willitwork.co.uk
 from microbit import *
 import array
 import gc
