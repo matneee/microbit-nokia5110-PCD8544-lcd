@@ -64,7 +64,7 @@ def LPrint (message):
     return
 
      
-#Load a bitmap to the screen (See PCD8544 for bitmap formatting)     
+#Load a bitmap to the screen (See PCD8544 manual for bitmap formatting)     
 def LGraph(graph):
     LWrt(1,graph)
     return
