@@ -19,6 +19,7 @@ CLK -> PIN13 (SCK)
     Full hardware technical details are to be found in PCD8544LCD_manual.pdf
     
 ################
+
 N5110_LCD_SPI.py
 Text functions for the LCD. This includes a full 127 character ascii font, basic screen positioning, clearing etc.
 This does not use a ser framebuffer per se - although one could be added if desired, for my purposes it wasn't really necessary. The Uridium demo gives an example of a more constant framebuffer being used
