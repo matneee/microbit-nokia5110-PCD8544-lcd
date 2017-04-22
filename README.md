@@ -16,4 +16,14 @@ CLK -> PIN13 (SCK)
   GND - GND
   although from what I understand it varies between LCDs whether the BL backlight pin should be connected to 3v or GND.
   
-  Full hardware technical details are to be found in PCD8544LCD_manual.pdf
+    Full hardware technical details are to be found in PCD8544LCD_manual.pdf
+    
+################    
+  
+uridium-demo.py
+This is a demo to illustrate the use of the LCD as a graphical display. Essentially it works by creating  a framebuffer that is 6 horizontal strips of 8 x 84 pixels. 
+  The list "Pics" contains 2 images in bytearray form (0-6 is image 1, 6-11 is image 2). 
+  The LScrollL and LScrollR functions read the relevant sections of each image into the framebuffer. This then uses the SPI interface to
+  write the framebuffer to the LCD.
+I apologise for the lack of comments in this file, but it's really scraping the limits of what size can currently be uploaded to the microbit. I genuinely had to strip the comments out to get it to run!
+  
