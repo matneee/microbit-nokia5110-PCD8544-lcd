@@ -33,15 +33,7 @@ gc.collect()
 def LWrt(dc, data):
     pin8.write_digital(dc)
     pin1.write_digital(0)
-    try:
-        buff = bytearray (len(data))
-    except TypeError:
-        buff = bytearray(1)
-    try:
-        buff = data[:]
-    except TypeError:
-         buff = data
-    spi.write(buff)
+    spi.write(data)
     pin1.write_digital(1)
     return
       
