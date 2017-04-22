@@ -1,5 +1,5 @@
 #Nokia 5110LCD Driver - Hardware SPI
-#Author - matneee (Martin Allen) 20 Apr 2017, matneee@willitwork.co.uk
+#Author - @matneee (Martin Allen) 20 Apr 2017, matneee@willitwork.co.uk
 
 #Pin configuration for LCD -> microbit;
 #RST -> PIN0
