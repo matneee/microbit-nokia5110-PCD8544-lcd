@@ -24,7 +24,14 @@ N5110_LCD_SPI.py
 Text functions for the LCD. This includes a full 127 character ascii font, basic screen positioning, clearing etc.
 This does not use a ser framebuffer per se - although one could be added if desired, for my purposes it wasn't really necessary. The Uridium demo gives an example of a more constant framebuffer being used
     
-################    
+################
+
+N5110_LCD_EEPROM.py
+Essentially the same as N5110_LCD_SPI, *except* instead of being stored as a bytearray in the program, it is stored on an EEPROM chip connected to the Micro:bit. This saves around half a kilobyte, which is a fairly significant amount considering the free memory available. Note that the same could be done to store any bitmaps required, opening up posibilities for relatively large numbers of bitmaps, or spritesheets for varied animation etc. EEPROM is quite cost effective (about 30p), and does not impact free memory in the way that opening  a file for reading could.
+
+Note that this REQUIRES you to first have the font on an EEPROM chip - instructions for doing so can be found here - https://github.com/matneee/microbit-I2C-EEPROM-24LCxxx-Read-Write
+
+################
   
 uridium-demo.py
 This is a demo to illustrate the use of the LCD as a graphical display. Essentially it works by creating  a framebuffer that is 6 horizontal strips of 8 x 84 pixels. 
