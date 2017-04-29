@@ -27,7 +27,7 @@ This does not use a ser framebuffer per se - although one could be added if desi
 ################
 
 N5110_LCD_EEPROM.py
-Essentially the same as N5110_LCD_SPI, *except* instead of being stored as a bytearray in the program, it is stored on an EEPROM chip connected to the Micro:bit. This saves around half a kilobyte, which is a fairly significant amount considering the free memory available. Note that the same could be done to store any bitmaps required, opening up posibilities for relatively large numbers of bitmaps, or spritesheets for varied animation etc. EEPROM is quite cost effective (about 30p), and does not impact free memory in the way that opening  a file for reading could.
+Essentially the same as N5110_LCD_SPI, *except* instead of being stored as a bytearray in the program, the font is stored on an EEPROM chip connected to the Micro:bit. This saves around half a kilobyte, which is a fairly significant amount considering the free memory available. Note that the same could be done to store any bitmaps required, opening up posibilities for relatively large numbers of bitmaps, or spritesheets for varied animation etc. EEPROM is quite cost effective (about 30p), and does not impact free memory in the way that opening  a file for reading could.
 
 Note that this REQUIRES you to first have the font on an EEPROM chip - instructions for doing so can be found here - https://github.com/matneee/microbit-I2C-EEPROM-24LCxxx-Read-Write
 
