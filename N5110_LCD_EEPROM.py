@@ -2,7 +2,7 @@
 #
 #Font is held in I2C EEPROM chip (an 24lc128 in this case)
 #
-#Author - @matneee (Martin Allen) 29 Apr 2017, matneee@willitwork.co.uk
+#Author - @matneee 29 Apr 2017
 
 #Pin configuration for LCD -> microbit;
 #RST -> PIN0
